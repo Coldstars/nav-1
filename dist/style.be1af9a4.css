@@ -1,0 +1,127 @@
+/*css reset*/
+*{box-sizing: border-box;}
+*:before,*:after{box-sizing: border-box;}
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*css style*/
+body{
+    background-color: rgb(238, 238, 238);
+}
+.globalHeader{
+    margin: 40px 20px 20px 20px;
+}
+.globalHeader form{
+    display: flex;
+    justify-content: space-between;
+}
+.globalHeader input{
+    width: 100%;
+    margin-right: 12px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-left: 12px;
+}
+@media(min-width:500px){
+    .globalHeader form{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.globalHeader{
+    margin-top:100px;
+    margin-bottom: 80px;
+}
+}
+.globalHeader button{
+    white-space: nowrap;
+    height: 40px;
+    padding: 0 25px;
+    background-color: rgb(69, 134, 233);
+    color: white;
+    font-size: 14px;
+    line-height: 36px;
+    border: none;
+    border-radius: 4px;
+}
+.globalMain .siteList{
+    flex-wrap: wrap;
+    display: flex;
+
+}
+@media(max-width:500px){
+    .globalMain .siteList{
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    .siteList .site{
+        margin-bottom: 15px;
+    }
+}
+@media(min-width:500px){
+    .globalMain{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+.globalMain .siteList{
+    margin-right: -25px;
+    
+}
+.siteList .site{
+    margin-right: 25px;
+    margin-bottom: 23px;
+
+}
+}
+.siteList .site{
+    width: 160px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-top:25px ;
+    height: 156px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+}
+.siteList .site .close{
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 24px;
+}
+.siteList .site > .logo{
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siteList .site > .link{
+    margin-top: 12px;
+}
+.siteList li .addButton{
+    width: 160px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-top:25px ;
+    height: 156px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.siteList .addButton .addIcon .icon{
+    width: 76px;
+    height: 76px;
+}
