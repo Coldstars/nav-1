@@ -65,6 +65,14 @@ window.onbeforeunload = () => {
     // console.log(string)
     localStorage.setItem('x', string)
 }
+// $('input.inputOn').on('focusin',(e)=>{
+//     console.log('输入框焦点');
+//     e.stopPropagation()
+// })
+$('input.inputOn').addEventListener('focusin',(e)=>{
+    console.log('输入框焦点');
+    e.stopPropagation();
+},false)     //阻止输入框焦点时，输入英文触发键盘事件。
 $(document).on('keypress',(e)=>{
     // console.log('das')
     const key=e.key
